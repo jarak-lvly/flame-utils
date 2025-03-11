@@ -1,0 +1,23 @@
+
+The Shift_L+Alt_L key combo in Flame registers as a Meta_L when using DCV viewer 2024.x on Ubuntu.
+i.e. first Shift hold then Alt toggle, Flame app reports that as a Meta / Flame key press.
+Oddly, Alt_L+Shift_L (i.e. first Alt hold then Shift toggle) registers correctly in Flame.
+We have not see this issue on DCV clients running on Windows or macOS, nor on HP "RGS".
+
+How to use:
+
+1.  Save wrapper script e.g.: /usr/local/bin/start_dcv.sh
+2.  chmod +x /usr/local/bin/start_dcv.sh
+3.  Backup the /usr/share/applications/com.nicesoftware.DcvViewer.desktop file before modifying.
+4.  Modify the /usr/share/applications/com.nicesoftware.DcvViewer.desktop file
+
+    Change these two lines from this: 
+    Exec=dcvviewer %U
+    TryExec=dcvviewer
+
+    to this (use the same path where you saved the start_dcv.sh script):
+    Exec=/usr/local/bin/start_dcv.sh %U
+    TryExec=/usr/local/bin/start_dcv.sh
+
+5.  Save the file and start dcvviewer app using the Applications menu / save this Application to your Favorites.
+

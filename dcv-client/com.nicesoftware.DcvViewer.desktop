@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name[es]=Amazon DCV
+Name[de]=Amazon DCV
+Name[fr]=Amazon DCV
+Name[id]=Amazon DCV
+Name[ja]=Amazon DCV
+Name[ko]=Amazon DCV
+Name[pt_BR]=Amazon DCV
+Name[tr]=Amazon DCV
+Name[zh_CN]=Amazon DCV
+Name=Amazon DCV
+Comment[es]=Cliente Amazon DCV
+Comment=Amazon DCV Client
+Exec=/usr/local/bin/start_dcv.sh %U
+TryExec=/usr/local/bin/start_dcv.sh
+Terminal=false
+Type=Application
+Icon=com.nicesoftware.DcvViewer
+MimeType=application/x-dcv;x-scheme-handler/dcv
+Categories=GNOME;GTK;Network;
