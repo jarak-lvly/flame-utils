@@ -1,0 +1,15 @@
+
+Flame pre-2025 user hotkey directory:  /opt/Autodesk/user/<username>/hotkey
+Flame 2025 user shortcuts directory:  /path/to/your/home/dir/flame/shortcuts
+
+How to use:
+
+1.  cd /opt/Autodesk/user/<username>
+2.  cp -r hotkey /var/tmp/hotkey_2024
+3.  cp flame-hotkeys_convert.py /var/tmp/hotkey_2024/
+4.  cd /var/tmp/hotkey_2024
+5.  python flame-hotkeys_convert.py
+6.  cp user.*.json /path/to/your/home/dir/flame/shortcuts/
+
+
+
